@@ -2,7 +2,7 @@
 venv/
 
 # Ignore raw datasets
-datasets/raw/
+**datasets/raw/
 
 # Ignore Python cache
 __pycache__/

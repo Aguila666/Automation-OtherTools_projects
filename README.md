@@ -52,12 +52,12 @@ Automation-DataScience/
 ├─ diagrams/                    # Excalidraw / Draw.io sketches, architecture diagrams, visual planning
 │   └─ .gitkeep                 # Only mentioned once to illustrate usage
 
-└─ 02_OtherTools_projects/
+└─ Automation-OtherTools_projects/
    ├─ Project1_AutomotiveIndustry/       # Each industry is a separate project
+   │   ├─ .vscode/                       # Project-level VS Code settings (Python interpreter, Peacock color, cSpell)
+   │   │   └─ settings.json
    │   ├─ Car_Manufacturing/             # Subcategory folder
    │   │   ├─ 01_Spanish/                # Each exercise has its own folder
-   │   │   │   ├─ .vscode/
-   │   │   │   │   └─ settings.json      # Python interpreter, Peacock color, cSpell words
    │   │   │   ├─ datasets/              # Original and processed datasets
    │   │   │   │   ├─ raw/               # Never overwrite original data
    │   │   │   │   │   └─ .gitkeep       # Tracks empty folder on GitHub
@@ -68,8 +68,6 @@ Automation-DataScience/
    │   │   │   ├─ models/                # Trained ML models (.pkl, .joblib)
    │   │   │   └─ README.md              # Exercise instructions: task, tools, steps, expected output
    │   │   ├─ 02_Chinese/
-   │   │   │   ├─ .vscode/
-   │   │   │   │   └─ settings.json
    │   │   │   ├─ datasets/
    │   │   │   │   ├─ raw/
    │   │   │   │   └─ processed/
@@ -111,7 +109,6 @@ Automation-DataScience/
    │   └─ Subcategory2/
    │       └─ ...
    └─ ... (future projects)
-
 
 
 ---
