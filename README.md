@@ -45,70 +45,85 @@ Each exercise includes:
 ## 🗂 Folder Structure
 
 ```text
+Automation-OtherTools_projects/
+├─ README.md                        # Repository overview, goals, usage, project explanations
+├─ .vscode/                         # Repo-level VS Code settings (Peacock, interpreter, spellcheck)
+│   └─ settings.json
+├─ utils/                           # Shared helper scripts across projects
+│   ├─ dataset_generators/          # Synthetic dataset generators
+│   ├─ pipeline_helpers/            # Shared ETL / preprocessing helpers
+│   ├─ visualization_helpers/       # Shared plotting utilities
+│   └─ .gitkeep
+├─ diagrams/                        # Excalidraw / Draw.io diagrams, workflows, architecture sketches
+│   ├─ pipelines/
+│   ├─ system_design/
+│   ├─ cloud_architecture/
+│   └─ .gitkeep
+├─ database/                        # Shared SQL/database resources across projects
+│   ├─ create_databases.sql         # Global database creation scripts
+│   ├─ schemas/                     # Shared schemas and table definitions
+│   │   └─ .gitkeep
+│   ├─ seed_data/                   # Mock/seed data scripts
+│   │   └─ .gitkeep
+│   ├─ views/                       # Reusable SQL views
+│   │   └─ .gitkeep
+│   ├─ stored_procedures/           # Stored procedures
+│   │   └─ .gitkeep
+│   ├─ triggers/                    # Database triggers and automation logic
+│   │   └─ .gitkeep
+│   └─ documentation/               # ERDs, schema explanations, DB notes
+│       └─ .gitkeep
+├─ app/                             # Optional integrated mini-apps/demos
+│   ├─ dashboards/                  # Streamlit, Dash, Flask, FastAPI demos
+│   ├─ automation_apps/             # n8n, Airflow, Robocorp integrations
+│   └─ .gitkeep
+├─ Project1_AutomotiveIndustry/     # Each industry is a separate project
+│   ├─ Car_Manufacturing/           # Subcategory/project domain
+│   │   ├─ 01_Spanish/              # Each exercise in a target language
+│   │   │   ├─ datasets/            # Challenge/project datasets
+│   │   │   │   ├─ raw/             # Original untouched data
+│   │   │   │   │   └─ .gitkeep
+│   │   │   │   └─ processed/       # Cleaned/transformed data
+│   │   │   ├─ notebooks/           # Jupyter notebooks for EDA/experimentation
+│   │   │   ├─ scripts/             # Python scripts, DAGs, preprocessing logic
+│   │   │   ├─ reports/             # Insights, dashboards, PDFs, markdown analysis
+│   │   │   ├─ models/              # ML models (.pkl, .joblib)
+│   │   │   ├─ configs/             # YAML/JSON config files
+│   │   │   ├─ logs/                # Pipeline or execution logs
+│   │   │   └─ README.md            # Exercise description, objectives, expected outputs
+│   │   ├─ 02_Chinese/
+│   │   │   └─ ...                  # Same structure
+│   │   ├─ 03_Portuguese/
+│   │   ├─ 04_Arabic/
+│   │   ├─ 05_Italian/
+│   │   ├─ 06_Japanese/
+│   │   ├─ 07_French/
+│   │   ├─ 08_Korean/
+│   │   ├─ 09_English/
+│   │   ├─ 10_Russian/
+│   │   ├─ 11_German/
+│   │   └─ 12_Hindi/
+│   ├─ Auto_Parts_Manufacturing/
+│   │   └─ ...                      # Same multi-language structure
+│   ├─ Electric_Vehicles/
+│   │   └─ ...
+│   ├─ Supply_Chain/
+│   │   └─ ...
+│   └─ Predictive_Maintenance/
+│       └─ ...
+├─ Project2_OtherIndustry/
+│   ├─ Subcategory1/
+│   │   └─ 01_Spanish/
+│   │       └─ ...
+│   ├─ Subcategory2/
+│   │   └─ ...
+│   └─ ...
+├─ Project3_FinanceIndustry/
+│   └─ ...
+├─ Project4_HealthcareIndustry/
+│   └─ ...
+└─ .gitignore                       # Ignore venvs, cache, temporary files, secrets, raw large data
 
-Automation-DataScience/
-├─ utils/                       # Shared helper scripts across projects (dataset generators, pipeline functions)
-│   └─ .gitkeep                 # Placeholder to track empty folder in GitHub
-├─ diagrams/                    # Excalidraw / Draw.io sketches, architecture diagrams, visual planning
-│   └─ .gitkeep                 # Only mentioned once to illustrate usage
-
-└─ Automation-OtherTools_projects/
-   ├─ Project1_AutomotiveIndustry/       # Each industry is a separate project
-   │   ├─ .vscode/                       # Project-level VS Code settings (Python interpreter, Peacock color, cSpell)
-   │   │   └─ settings.json
-   │   ├─ Car_Manufacturing/             # Subcategory folder
-   │   │   ├─ 01_Spanish/                # Each exercise has its own folder
-   │   │   │   ├─ datasets/              # Original and processed datasets
-   │   │   │   │   ├─ raw/               # Never overwrite original data
-   │   │   │   │   │   └─ .gitkeep       # Tracks empty folder on GitHub
-   │   │   │   │   └─ processed/         # Cleaned / transformed datasets
-   │   │   │   ├─ notebooks/             # Jupyter notebooks for EDA & experimentation
-   │   │   │   ├─ scripts/               # Reusable Python scripts, Airflow DAGs, preprocessing
-   │   │   │   ├─ reports/               # Visualizations, PDFs, Power BI/Excel outputs
-   │   │   │   ├─ models/                # Trained ML models (.pkl, .joblib)
-   │   │   │   └─ README.md              # Exercise instructions: task, tools, steps, expected output
-   │   │   ├─ 02_Chinese/
-   │   │   │   ├─ datasets/
-   │   │   │   │   ├─ raw/
-   │   │   │   │   └─ processed/
-   │   │   │   ├─ notebooks/
-   │   │   │   ├─ scripts/
-   │   │   │   ├─ reports/
-   │   │   │   ├─ models/
-   │   │   │   └─ README.md
-   │   │   ├─ 03_Portuguese/
-   │   │   │   └─ ... (same structure)
-   │   │   ├─ 04_Arabic/
-   │   │   │   └─ ...
-   │   │   ├─ 05_Italian/
-   │   │   │   └─ ...
-   │   │   ├─ 06_Japanese/
-   │   │   │   └─ ...
-   │   │   ├─ 07_French/
-   │   │   │   └─ ...
-   │   │   ├─ 08_Korean/
-   │   │   │   └─ ...
-   │   │   ├─ 09_English/
-   │   │   │   └─ ...
-   │   │   ├─ 10_Russian/
-   │   │   │   └─ ...
-   │   │   ├─ 11_German/
-   │   │   │   └─ ...
-   │   │   └─ 12_Hindi/
-   │   │       └─ ...
-   │   ├─ Auto_Parts_Manufacturing/
-   │   │   └─ ... (same exercise subfolders for each language)
-   │   ├─ Electric_Vehicles/
-   │   │   └─ ...
-   │   └─ ... (other subcategories)
-
-   ├─ Project2_OtherIndustry/
-   │   ├─ Subcategory1/
-   │   │   └─ 01_Spanish/
-   │   │       └─ ... (same structure)
-   │   └─ Subcategory2/
-   │       └─ ...
-   └─ ... (future projects)
 
 
 ---
