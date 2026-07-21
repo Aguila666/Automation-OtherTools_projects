@@ -1,14 +1,30 @@
-# Ignore virtual environment
+# Virtual environments
 venv/
 
-# Ignore raw datasets
-**datasets/raw/
+# Raw datasets
+**/datasets/raw/
 
-# Ignore Python cache
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore temporary VS Code files
-.vscode/settings.json  # Optional, only include if you don’t want it on GitHub
+# VS Code personal settings
+.vscode/settings.json
+
+# Local history
+.history/
+
+# Generated models
+**/models/
+
+# Generated logs
+**/logs/
+
+# Experimental folders
+dags/
+
+docker-compose.yaml
+
+utils/dataset_quality/
