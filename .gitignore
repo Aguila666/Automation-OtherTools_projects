@@ -22,8 +22,8 @@ __pycache__/
 # Generated logs
 **/logs/
 
-# Experimental folders
-dags/
+# Linux virtual environment
+Automation-OtherTools_Linux
 
 docker-compose.yaml
 
