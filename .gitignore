@@ -1,5 +1,6 @@
 # Virtual environments
 venv/
+Automation-OtherTools_Linux/
 
 # Raw datasets
 **/datasets/raw/
@@ -16,15 +17,17 @@ __pycache__/
 # Local history
 .history/
 
-# Generated models
-**/models/
-
 # Generated logs
 **/logs/
 
-# Linux virtual environment
-Automation-OtherTools_Linux
+# Temporary files
+*.tmp
 
+# Docker local configuration
 docker-compose.yaml
 
-utils/dataset_quality/
+# Continue AI Extension local settings
+.continue/
+
+# Models
+**/models/
