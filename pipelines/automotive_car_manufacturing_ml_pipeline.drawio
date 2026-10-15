@@ -1,0 +1,33 @@
+<mxfile host="65bd71144e">
+    <diagram id="eQO6N9dhEH4G9-zaLBu-" name="automotive_car_manufacturing_ml_pipeline">
+        <mxGraphModel dx="762" dy="561" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-3" edge="1" parent="1" source="WCvqbnLD0mHwO5fqr2L2-1" style="edgeStyle=none;html=1;fontSize=11;" target="WCvqbnLD0mHwO5fqr2L2-2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="Raw Dataset" vertex="1">
+                    <mxGeometry height="30" width="90" x="65" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-5" edge="1" parent="1" source="WCvqbnLD0mHwO5fqr2L2-2" style="edgeStyle=none;html=1;" target="WCvqbnLD0mHwO5fqr2L2-4" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-2" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="Data Layer&lt;br&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Exploration&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Cleaning&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Preparation&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="125" width="125" x="50" y="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-7" edge="1" parent="1" source="WCvqbnLD0mHwO5fqr2L2-4" style="edgeStyle=none;html=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="112.5" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-4" parent="1" style="whiteSpace=wrap;html=1;" value="ML Layer&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Target&lt;/li&gt;&lt;li&gt;Features&lt;/li&gt;&lt;li&gt;Training&lt;/li&gt;&lt;li&gt;Evaluation&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="150" width="112.5" x="56.25" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="WCvqbnLD0mHwO5fqr2L2-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;ML Results&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="30" width="90" x="65" y="535" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
